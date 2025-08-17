@@ -48,7 +48,7 @@ void loop()
   lcd.print("smell level: ");
   lcd.print(mqvalue); //lcd에 프린트
 
-  if(mqvalue>=10 && c>=60) { //1분마다 mq값 50 넘는지 체크
+  if(mqvalue>=50 && c>=60) { //1분마다 mq값 50 넘는지 체크
     c = 0; // 초기화
     Serial.print(mqvalue);
     Serial.println(" a"); //시리얼 통신용
